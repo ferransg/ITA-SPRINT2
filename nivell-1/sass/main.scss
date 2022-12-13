@@ -1,0 +1,21 @@
+// Personalizar variables colores Bootstrap
+$primary: #5265e1;
+$secondary: #fa5959;
+
+// Forma de pastilla dreta i esquerra
+main{
+    overflow-x: hidden;
+}
+
+.pill-form-dreta{
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    top: 30%;
+    bottom: 0%;
+    left: 30%;
+    right: 0%;
+}
+
+// Importar Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";

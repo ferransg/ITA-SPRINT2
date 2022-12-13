@@ -1,0 +1,95 @@
+<!--
+    Ferran Salas
+    IT ACADEMY
+    ESPECIALITZACIÓ (REACT)
+    SPRINT 2: MAQUETACIÓ II
+
+    Nivell 1 - Exercici 1: Part principal d'una landing page amb BOOTSTRAP 5 i SASS
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple Bookmark Manager - landing page" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./assets/favicon-32x32.png" />
+    <title>SPRINT 2 - Nivell 1 - Ex 1</title>
+  </head>
+
+  <body>
+    <!-- Navbar superior -->
+    <header class="container">
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-xl mt-3 px-5">
+          <a class="navbar-brand" href="#"><img src="./assets/logo-bookmark.svg" alt="logo" /></a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="./assets/icon-hamburger.svg" alt="navbar toggler icon" />
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav ms-md-auto gap-4 me-lg-5 mt-4 mt-md-0 text-uppercase small fw-light"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+              <button
+                type="button"
+                class="btn btn-secondary text-white border-secondary shadow-sm px-4 text-uppercase"
+              >
+                Login
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 1er apartat Grid responsive-->
+    <main class="mt-5">
+      <section class="container-xl mt-5 pt-5">
+        <div class="row align-items-center">
+          <div class="container position-relative col-12 col-md-6 px-5 px-md-0 order-md-2 me-md-0">
+            <img class="img-fluid" src="./assets/illustration-hero.svg" />
+            <div class="pill-form-dreta badge rounded-pill bg-primary">.</div>
+          </div>
+
+          <div class="col-12 col-md-5 order-md-1 mx-4">
+            <h1 class="text-center text-md-start mb-3 px-5 px-md-0 mt-5 mt-md-0">
+              A Simple Bookmark Manager
+            </h1>
+            <p class="text-center text-md-start mb-4 text-black-50 px-5 px-md-0">
+              A clean and simple interface to organize your favourite websites. Open a new browser
+              tab and see your sites load instantly. Try it for free.
+            </p>
+            <div class="d-flex justify-content-center justify-content-md-start gap-3">
+              <button type="button" class="btn btn-primary shadow py-2 text-nowrap">
+                <small>Get it on Chrome</small>
+              </button>
+              <button type="button" class="btn btn-light shadow py-2 text-nowrap">
+                <small>Get it on Firefox</small>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
