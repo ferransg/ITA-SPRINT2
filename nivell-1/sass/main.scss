@@ -3,11 +3,11 @@ $primary: #5265e1;
 $secondary: #fa5959;
 
 // Forma de pastilla dreta i esquerra
-main{
+main {
     overflow-x: hidden;
 }
 
-.pill-form-dreta{
+.pill-form-dreta {
     position: absolute;
     z-index: -1;
     width: 300%;
@@ -16,6 +16,37 @@ main{
     left: 30%;
     right: 0%;
 }
+
+.pill-form-esquerra {
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    top: 20%;
+    bottom: 0%;
+    right: 20%;
+}
+
+// Estils Tabs component
+ul#myTab {
+    border: 0;
+
+    .nav-item {
+        .nav-link {
+            color: black;
+            opacity: 60%;
+            border: 0;
+            border-bottom: 1px solid #dee2e6;
+
+        }
+
+        .nav-link.active {
+            opacity: 100%;
+            border-bottom: 3px solid $secondary;
+        }
+
+    }
+}
+
 
 // Importar Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";

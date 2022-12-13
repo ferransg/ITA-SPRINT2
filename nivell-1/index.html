@@ -4,7 +4,7 @@
     ESPECIALITZACIÓ (REACT)
     SPRINT 2: MAQUETACIÓ II
 
-    Nivell 1 - Exercici 1: Part principal d'una landing page amb BOOTSTRAP 5 i SASS
+    Nivell 1 - Exercici 2: Apartat "features" d'una landing page amb BOOTSTRAP 5 i SASS
 -->
 
 <!DOCTYPE html>
@@ -15,13 +15,13 @@
     <meta name="description" content="A simple Bookmark Manager - landing page" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="icon" href="./assets/favicon-32x32.png" />
-    <title>SPRINT 2 - Nivell 1 - Ex 1</title>
+    <title>SPRINT 2 - Nivell 1 - Ex 2</title>
   </head>
 
   <body>
     <!-- Navbar superior -->
     <header class="container">
-      <nav class="navbar navbar-expand-md fixed-top">
+      <nav class="navbar navbar-expand-md fixed-top bg-white">
         <div class="container-xl mt-3 px-5">
           <a class="navbar-brand" href="#"><img src="./assets/logo-bookmark.svg" alt="logo" /></a>
           <button
@@ -35,12 +35,11 @@
           >
             <img src="./assets/icon-hamburger.svg" alt="navbar toggler icon" />
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              class="navbar-nav ms-md-auto gap-4 me-lg-5 mt-4 mt-md-0 text-uppercase small fw-light"
-            >
+            <ul class="navbar-nav ms-md-auto gap-4 me-lg-5 mt-4 mt-md-0 text-uppercase small fw-light">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Features</a>
+                <a class="nav-link active" href="#features">Features</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">Pricing</a>
@@ -48,11 +47,8 @@
               <li class="nav-item">
                 <a class="nav-link active" href="#">Contact</a>
               </li>
-              <button
-                type="button"
-                class="btn btn-secondary text-white border-secondary shadow-sm px-4 text-uppercase"
-              >
-                Login
+              <button type="button" class="btn btn-secondary text-white border-secondary shadow-sm px-4 text-uppercase">
+                <small>Login</small>
               </button>
             </ul>
           </div>
@@ -60,7 +56,7 @@
       </nav>
     </header>
 
-    <!-- 1er apartat Grid responsive-->
+    <!-- 1er apartat Grid responsive - Hero web part -->
     <main class="mt-5">
       <section class="container-xl mt-5 pt-5">
         <div class="row align-items-center">
@@ -70,12 +66,10 @@
           </div>
 
           <div class="col-12 col-md-5 order-md-1 mx-4">
-            <h1 class="text-center text-md-start mb-3 px-5 px-md-0 mt-5 mt-md-0">
-              A Simple Bookmark Manager
-            </h1>
+            <h1 class="text-center text-md-start mb-3 px-5 px-md-0 mt-5 mt-md-0">A Simple Bookmark Manager</h1>
             <p class="text-center text-md-start mb-4 text-black-50 px-5 px-md-0">
-              A clean and simple interface to organize your favourite websites. Open a new browser
-              tab and see your sites load instantly. Try it for free.
+              A clean and simple interface to organize your favourite websites. Open a new browser tab and see your
+              sites load instantly. Try it for free.
             </p>
             <div class="d-flex justify-content-center justify-content-md-start gap-3">
               <button type="button" class="btn btn-primary shadow py-2 text-nowrap">
@@ -84,6 +78,135 @@
               <button type="button" class="btn btn-light shadow py-2 text-nowrap">
                 <small>Get it on Firefox</small>
               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2n apartat Grid responsive - Features -->
+      <section class="container-xl pt-5 pt-md-4 mt-5" id="features">
+        <div class="row justify-content-center mt-5 mt-md-4 mb-5">
+          <div class="col-12 col-md-8 col-xl-6 px-5">
+            <h3 class="text-center">Features</h3>
+            <p class="text-center text-black-50 mt-3">
+              Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync
+              between your devices so you can access them on the go.
+            </p>
+          </div>
+        </div>
+
+        <!--tabs buttons-->
+        <div class="row">
+          <ul
+            class="nav nav-tabs flex-column flex-md-row justify-content-center align-items-center mb-5 small"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active px-5 pb-0 mb-1 mb-md-0"
+                id="tab1"
+                data-bs-toggle="tab"
+                data-bs-target="#tab1-pane"
+                type="button"
+                role="tab"
+                aria-controls="tab1-pane"
+                aria-selected="true"
+              >
+                <div class="pb-3">Simple Bookmarking</div>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link px-5 pb-0 mb-1 mb-md-0"
+                id="tab2"
+                data-bs-toggle="tab"
+                data-bs-target="#tab2-pane"
+                type="button"
+                role="tab"
+                aria-controls="tab2-pane"
+                aria-selected="false"
+              >
+                <div class="pb-3">Speedy Searching</div>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link px-5 pb-0 mb-1 mb-md-0"
+                id="tab3"
+                data-bs-toggle="tab"
+                data-bs-target="#tab3-pane"
+                type="button"
+                role="tab"
+                aria-controls="tab3-pane"
+                aria-selected="false"
+              >
+                <div class="pb-3">Easy Sharing</div>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!--tabs content-->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="tab1-pane" role="tabpanel" aria-labelledby="tab1" tabindex="0">
+            <div class="container pt-3">
+              <div class="row align-items-center">
+                <div class="position-relative col-12 col-md-6 px-5 pb-5 mb-5 mb-md-0">
+                  <img class="img-fluid" src="./assets/illustration-features-tab-1.svg" alt="img tab1" />
+                  <div class="pill-form-esquerra badge rounded-pill bg-primary">.</div>
+                </div>
+                <div class="col-12 col-md-6 px-5 text-center text-md-start">
+                  <h3 class="mb-3">Bookmark in one click</h3>
+                  <p class="text-black-50 mb-4">
+                    Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
+                    control over how you manage your favourite sites
+                  </p>
+                  <button type="button" class="btn btn-primary shadow d-none d-md-inline-block">
+                    <small>More info</small>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab2-pane" role="tabpanel" aria-labelledby="tab2" tabindex="0">
+            <div class="container pt-3">
+              <div class="row align-items-center">
+                <div class="position-relative col-12 col-md-6 px-5 pb-5 mb-5 mb-md-0">
+                  <img class="img-fluid" src="./assets/illustration-features-tab-2.svg" alt="img tab2" />
+                  <div class="pill-form-esquerra badge rounded-pill bg-primary">.</div>
+                </div>
+                <div class="col-12 col-md-6 px-5 text-center text-md-start">
+                  <h3 class="mb-3">Intelligent search</h3>
+                  <p class="text-black-50 mb-4">
+                    Our powerfull search feature will help you find saved sites in no time at all. No need to trawl
+                    through all of your bookmarks.
+                  </p>
+                  <button type="button" class="btn btn-primary shadow d-none d-md-inline-block">
+                    <small>More info</small>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab3-pane" role="tabpanel" aria-labelledby="tab3" tabindex="0">
+            <div class="container pt-3">
+              <div class="row align-items-center">
+                <div class="position-relative col-12 col-md-6 px-5 pb-5 mb-5 mb-md-0">
+                  <img class="img-fluid" src="./assets/illustration-features-tab-3.svg" alt="img tab3" />
+                  <div class="pill-form-esquerra badge rounded-pill bg-primary">.</div>
+                </div>
+                <div class="col-12 col-md-6 px-5 text-center text-md-start">
+                  <h3 class="mb-3">Share your bookmarks</h3>
+                  <p class="text-black-50 mb-4">
+                    Easily share your bookmarks and collections with others. Create a shareable link that you can send
+                    at the click of a button.
+                  </p>
+                  <button type="button" class="btn btn-primary shadow d-none d-md-inline-block">
+                    <small>More info</small>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

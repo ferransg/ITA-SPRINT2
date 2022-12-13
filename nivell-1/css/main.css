@@ -13,6 +13,29 @@ main {
   right: 0%;
 }
 
+.pill-form-esquerra {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  top: 20%;
+  bottom: 0%;
+  right: 20%;
+}
+
+ul#myTab {
+  border: 0;
+}
+ul#myTab .nav-item .nav-link {
+  color: black;
+  opacity: 60%;
+  border: 0;
+  border-bottom: 1px solid #dee2e6;
+}
+ul#myTab .nav-item .nav-link.active {
+  opacity: 100%;
+  border-bottom: 3px solid #fa5959;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
