@@ -1,0 +1,58 @@
+// Personalizar variables colores Bootstrap
+$primary: #5265e1;
+$secondary: #fa5959;
+
+// Forma de pastilla dreta i esquerra
+main {
+    overflow-x: hidden;
+}
+
+.pill-form-dreta {
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    top: 30%;
+    bottom: 0%;
+    left: 30%;
+    right: 0%;
+}
+
+.pill-form-esquerra {
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    top: 20%;
+    bottom: 0%;
+    right: 20%;
+}
+
+// Estils Tabs component
+ul#myTab {
+    border: 0;
+
+    .nav-item {
+        .nav-link {
+            color: black;
+            opacity: 60%;
+            border: 0;
+            border-bottom: 1px solid #dee2e6;
+
+        }
+
+        .nav-link.active {
+            opacity: 100%;
+            border-bottom: 3px solid $secondary;
+        }
+
+    }
+}
+
+// Icono arrow accordion component
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='12'><path fill='none' stroke='#5267DF' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='15'><path fill='#5267DF' fill-rule='evenodd' d='M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z' /></svg>");
+
+// Icono invalid form
+$form-feedback-icon-invalid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><g fill='none' fill-rule='evenodd'><circle cx='10' cy='10' r='10' fill='#FA5959'/><g fill='#FFF' transform='translate(9 5)'><rect width='2' height='7' rx='1'/><rect width='2' height='2' y='8' rx='1' /></g></g></svg>");
+
+// Importar Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
