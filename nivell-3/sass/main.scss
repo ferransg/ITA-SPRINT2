@@ -98,5 +98,17 @@ $accordion-button-active-color: black;
     filter: invert(55%) sepia(34%) saturate(2283%) hue-rotate(320deg) brightness(91%) contrast(117%);
 }
 
+// Posició cards en medium breakpoint amb nth-child(n) i Media Query
+
+@media screen and (min-width: 768px) {
+    @for $n from 1 through 3 {
+        .card-position {
+            &>:nth-child(#{$n}) {
+                margin-top: #{(($n - 1)*3)}rem;
+            }
+        }
+    }
+}
+
 // Importar Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
